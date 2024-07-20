@@ -6,3 +6,6 @@
 .font-size-h4 {
   @apply text-[24px] font-cabinet font-bold text-custom-white text-custom leading-custom tracking-normal
 }
+.font-size-h2 {
+  @apply text-[24px] font-cabinet font-[900] text-custom-white text-custom leading-custom tracking-normal
+}
