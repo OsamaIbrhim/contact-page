@@ -13,6 +13,25 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        'cabinet': ['Cabinet Grotesk', 'Cabinet Grotesk Placeholder', 'sans-serif'],
+        'cabinet-bold': ['Cabinet Grotesk', 'sans-serif'],
+      },
+      fontSize: {
+        'custom': '24px',
+      },
+      lineHeight: {
+        'custom': '36px',
+      },
+      letterSpacing: {
+        'normal': '0em',
+      },
+      spacing: {
+        'paragraph': '40px',
+      },
+      textColor: {
+        'custom-white': '#ffffff',
+      },
     },
   },
   plugins: [],

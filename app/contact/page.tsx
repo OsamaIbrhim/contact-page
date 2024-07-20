@@ -10,7 +10,7 @@ export default function ContactPage() {
       <div className="flex-nowrap">
         <div className="px-40 text-center flex w-full flex-col flex-none h-screen flex-nowrap justify-center">
           <div className="flex flex-col flex-none flex-nowrap gap-[60px] justify-between">
-            {/* Connect with Firrnas Title */}
+            {/* Connect with Firrnas Title Start */}
             <div className="text-center px-40 flex justify-between flex-col flex-none flex-nowrap gap-[16px] max-h-[171px]">
               <div className="text-white ">
                 <button className="py-2 px-4 border-[1px] border-solid rounded-3xl text-sm text-[#9a8fff] bg-[#4e47f526] border-[#4e47f580]">
@@ -24,82 +24,109 @@ export default function ContactPage() {
                 <h6 className="text-white">Your questions and feedback matter to us</h6>
               </div>
             </div>
+            {/* End */}
 
-            {/* Form Section */}
-            <div className="framer-je4ujn pr-40 pl-40 " style={{ opacity: 1, transform: 'perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg) translateZ(0px)' }}>
-              <div className="framer-ll2c8e-container" style={{ height: '100%', width: '100%', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-                <form method="POST" style={{ display: 'grid', gridTemplateRows: 'max-content 1fr max-content', gridTemplateColumns: '1fr', gap: '16px', width: '100%', height: '100%' }}>
-                  <div style={{ width: '100%', display: 'grid', gridAutoFlow: 'column', gap: '16px' }}>
+            {/* Form Section Start */}
+            <div className="pr-40 pl-40 opacity-100 transform-none perspective-[1200px]">
+              <div className="flex items-center justify-center flex-col h-full w-full relative">
+                <form method="POST" className="grid grid-rows-[max-content_1fr_max-content] gap-4 w-full h-full">
+                  <div className="grid grid-flow-col gap-4 w-full">
                     <input
                       type="text"
                       name="name"
                       placeholder="Name"
-                      className="input-style"
+                      className="appearance-none w-full px-4 py-4 rounded-2xl bg-[#15132a] text-white border-none outline-none"
                     />
                     <input
                       type="email"
                       name="email"
                       placeholder="Email"
-                      className="input-style"
+                      className="appearance-none w-full px-4 py-4 rounded-2xl bg-[#15132a] text-white border-none outline-none"
                     />
                   </div>
                   <textarea
                     name="message"
                     placeholder="Message"
-                    className="input-style"
+                    className="appearance-none w-full px-4 py-4 rounded-2xl bg-[#15132a] text-white border-none outline-none"
                   ></textarea>
-                  <div className="bg-[#2F2C85] rounded-[28px] text-white leading-[1.4em] p-[16px] font-bold	">
+                  <div className="">
                     <input
                       type="submit"
                       value="Submit"
+                      className="bg-[#2F2C85] text-white font-bold p-4 border-none outline-none cursor-pointer
+                       appearance-none select-none items-start text-center cursor-default box-border bg-buttonface text-buttontext
+                        whitespace-pre border-[2px] border-outset border-buttonborder inline-block w-full leading-[1.4em]
+                           rounded-[28px]   text-[16px]  
+                         z-10 opacity-100"
                     />
                   </div>
                 </form>
               </div>
             </div>
+
+            {/* End */}
           </div>
         </div>
 
-        {/* Additional Sections */}
-        <div className="flex flex-row gap-5 h-min items-center justify-center overflow-hidden px-[160px] pb-[60px] relative w-full">
-          <div className="flex flex-row gap-5 h-min items-start justify-start overflow-visible p-8 w-[430px]">
-            <div className="bg-[#15132a] border border-[#282545] rounded-2xl w-full opacity-100 p-4">
-              <div className="flex flex-col gap-4 items-start">
+        {/* Additional Sections Start */}
+        <div className="grid gap-5 items-center justify-center overflow-hidden px-[160px] pb-[60px] relative w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-col items-start justify-start gap-1 h-min overflow-visible p-8 relative w-full bg-[#15132a] border border-[#282545] rounded-xl opacity-100">
+            <div className="flex flex-col items-start justify-start gap-[32px] h-min overflow-visible p-0 relative w-full">
+              <div className="font-size-h4 opacity-100 flex flex-col items-start justify-start gap-2 h-min overflow-visible p-0 relative w-full">
                 <FontAwesomeIcon icon={faPhone} className="text-[#2f2c85] text-3xl" />
-                <h3 className="text-white font-bold">Call Us</h3>
-                <p className="text-[#9399f4] text-lg">1-385-555-5476</p>
+                <h4 className="">Call Us</h4>
+              </div>
+              <h6 className="text-[#9399f4] text-lg">1-385-555-5476</h6>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-start justify-start gap-1 h-min overflow-visible p-8 relative w-full bg-[#15132a] border border-[#282545] rounded-xl opacity-100">
+            <div className="flex flex-col items-start justify-start gap-[32px] h-min overflow-visible p-0 relative w-full">
+              <div className="font-size-h4 opacity-100 flex flex-col items-start justify-start gap-2 h-min overflow-visible p-0 relative w-full">
+                <FontAwesomeIcon icon={faEnvelope} className="text-[#2f2c85] text-3xl" />
+                <h4 className="">Send Us An Email</h4>
+              </div>
+              <div className="opacity-100 flex flex-col items-start justify-start gap-[6px] h-min overflow-visible p-0 relative w-full">
+                <p className="text-[#9399f4] text-lg">info@firrnas.com</p>
+                <p className="text-[#9399f4] text-lg">business@firrnas.com</p>
               </div>
             </div>
           </div>
 
-          <div className="bg-[#15132a] border border-[#282545] rounded-2xl w-[430px] p-4">
-            <div className="flex flex-col gap-4 items-start">
-              <FontAwesomeIcon icon={faEnvelope} className="text-[#2f2c85] text-3xl" />
-              <h3 className="text-white font-bold">Send Us An Email</h3>
-              <p className="text-[#9399f4] text-lg">info@firrnas.com</p>
-              <p className="text-[#9399f4] text-lg">business@firrnas.com</p>
+          <div className="flex flex-col items-start justify-start gap-1 h-min overflow-visible p-8 relative w-full bg-[#15132a] border border-[#282545] rounded-xl opacity-100">
+            <div className="flex flex-col items-start justify-start gap-[32px] h-min overflow-visible p-0 relative w-full">
+              <div className="font-size-h4 opacity-100 flex flex-col items-start justify-start gap-2 h-min overflow-visible p-0 relative w-full">
+                <FontAwesomeIcon icon={faCalendar} className="text-[#2f2c85] text-3xl" />
+                <h4 className="">Schedule Meeting</h4>
+              </div>
+              <div className="opacity-100">
+                <a className="
+          bg-[rgb(47,44,133)] rounded-full opacity-100 
+          flex items-center cursor-pointer flex-nowrap 
+          gap-[8px] h-auto overflow-hidden px-[24px] py-[16px] 
+          relative no-underline w-auto
+          flex-row justify-center h-min text-white
+          overflow-visible border border-[#282545] border-solid 
+          border-[1px] flex-none font-bold">
+                  <p>See Availability</p>
+                  <FontAwesomeIcon icon={faArrowRight} className="arrow-icon" />
+                </a>
+              </div>
             </div>
           </div>
 
-          <div className="bg-[#15132a] border border-[#282545] rounded-2xl w-[430px] p-4">
-            <div className="flex flex-col gap-4 items-start">
-              <FontAwesomeIcon icon={faCalendar} className="text-[#2f2c85] text-3xl" />
-              <h3 className="text-white font-bold">Schedule Meeting</h3>
-              <button className="bg-[#2F2C85] text-white rounded-full px-4 py-2 flex items-center">
-                See Availability
-                <FontAwesomeIcon icon={faArrowRight} className="text-white ml-2" />
-              </button>
-            </div>
-          </div>
-
-          <div className="bg-[#15132a] border border-[#282545] rounded-2xl w-[430px] p-4">
-            <div className="flex flex-col gap-4 items-start">
-              <FontAwesomeIcon icon={faLocationDot} className="text-[#2f2c85] text-3xl" />
-              <h3 className="text-white font-bold">Office Location</h3>
+          <div className="flex flex-col items-start justify-start gap-1 h-min overflow-visible p-8 relative w-full bg-[#15132a] border border-[#282545] rounded-xl opacity-100">
+            <div className="flex flex-col items-start justify-start gap-[32px] h-min overflow-visible p-0 relative w-full">
+              <div className="font-size-h4 opacity-100 flex flex-col items-start justify-start gap-2 h-min overflow-visible p-0 relative w-full">
+                <FontAwesomeIcon icon={faLocationDot} className="text-[#2f2c85] text-3xl" />
+                <h4 className="">Office Location</h4>
+              </div>
               <p className="text-[#9399f4] text-lg">United Kingdom</p>
             </div>
           </div>
         </div>
+
+        {/* End */}
 
         <div>
 

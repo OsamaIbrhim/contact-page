@@ -1,41 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;700&display=swap');
 
-/* Custom styles */
-.input-style {
-  @apply appearance-none w-full px-4 py-4 rounded-2xl bg-[#15132a] text-white border-none outline-none;
-}
-
-/* Additional sections styling */
-/* .features {
-  @apply pt-[var(--section-padding)] pb-[var(--section-padding)] bg-[var(--section-background)] h-[98vh];
-} */
-
-/* .features .container {
-  @apply grid grid-cols-[repeat(auto-fill,minmax(275px,1fr))] gap-5 px-32 pb-15;
-} */
-
-.features .icons {
-  @apply text-[#2f2c85] text-3xl;
-}
-
-.features h3 {
-  @apply font-bold text-white;
-}
-
-.features p {
-  @apply text-[#9399f4] text-lg;
-}
-
-.features p:hover {
-  @apply text-white;
-}
-
-.features button {
-  @apply cursor-pointer px-4 py-2 bg-[#2F2C85] text-white rounded-full border-none;
-}
-
-.features .arrow {
-  @apply text-white ml-2;
+.font-size-h4 {
+  @apply text-[24px] font-cabinet font-bold text-custom-white text-custom leading-custom tracking-normal
 }
