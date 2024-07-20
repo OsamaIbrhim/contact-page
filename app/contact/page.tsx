@@ -79,7 +79,7 @@ export default function ContactPage() {
                   <FontAwesomeIcon icon={faPhone} className="text-[#2f2c85] text-3xl" />
                   <h4 className="">Call Us</h4>
                 </div>
-                <h6 className="text-[#9399f4] text-lg">1-385-555-5476</h6>
+                <p className="text-[#9399f4] text-lg hover:text-[#ffffff] cursor-pointer">1-385-555-5476</p>
               </div>
             </div>
 
@@ -90,8 +90,8 @@ export default function ContactPage() {
                   <h4 className="">Send Us An Email</h4>
                 </div>
                 <div className="opacity-100 flex flex-col items-start justify-start gap-[6px] h-min overflow-visible p-0 relative w-full">
-                  <p className="text-[#9399f4] text-lg">info@firrnas.com</p>
-                  <p className="text-[#9399f4] text-lg">business@firrnas.com</p>
+                  <p className="text-[#9399f4] text-lg hover:text-[#ffffff] cursor-pointer">info@firrnas.com</p>
+                  <p className="text-[#9399f4] text-lg hover:text-[#ffffff] cursor-pointer">business@firrnas.com</p>
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function ContactPage() {
                   <FontAwesomeIcon icon={faLocationDot} className="text-[#2f2c85] text-3xl" />
                   <h4 className="">Office Location</h4>
                 </div>
-                <p className="text-[#9399f4] text-lg">United Kingdom</p>
+                <p className="text-[#9399f4] text-lg hover:text-[#ffffff] cursor-pointer">United Kingdom</p>
               </div>
             </div>
           </div>
