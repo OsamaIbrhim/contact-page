@@ -2,32 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Custom styles */
+.input-style {
+  @apply appearance-none w-full px-4 py-4 rounded-2xl bg-[#15132a] text-white border-none outline-none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Additional sections styling */
+/* .features {
+  @apply pt-[var(--section-padding)] pb-[var(--section-padding)] bg-[var(--section-background)] h-[98vh];
+} */
+
+/* .features .container {
+  @apply grid grid-cols-[repeat(auto-fill,minmax(275px,1fr))] gap-5 px-32 pb-15;
+} */
+
+.features .icons {
+  @apply text-[#2f2c85] text-3xl;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.features h3 {
+  @apply font-bold text-white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.features p {
+  @apply text-[#9399f4] text-lg;
+}
+
+.features p:hover {
+  @apply text-white;
+}
+
+.features button {
+  @apply cursor-pointer px-4 py-2 bg-[#2F2C85] text-white rounded-full border-none;
+}
+
+.features .arrow {
+  @apply text-white ml-2;
 }
