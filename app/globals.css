@@ -4,8 +4,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;700&display=swap');
 
 .font-size-h4 {
-  @apply text-[24px] font-cabinet font-bold text-custom-white text-custom leading-custom tracking-normal
+  @apply text-[24px] font-cabinet text-custom-white text-custom leading-custom tracking-normal
 }
+
 .font-size-h2 {
   @apply text-[24px] font-cabinet font-[900] text-custom-white text-custom leading-custom tracking-normal
+}
+
+.p-element {
+  @apply text-[#9399f4] text-lg hover:text-[#ffffff] cursor-pointer text-[#9399f4] text-lg hover:text-[#ffffff] cursor-pointer text-[#9399f4] text-lg hover:text-[#ffffff] cursor-pointer text-[#9399f4] text-lg hover:text-[#ffffff] cursor-pointer
+}
+
+.additional-section-div-2 {
+  @aaply flex flex-col items-start justify-start h-min overflow-visible p-0 relative w-full flex flex-col items-start justify-start  h-min overflow-visible p-0 relative w-full flex flex-col items-start justify-start  h-min overflow-visible p-0 relative w-full flex flex-col items-start justify-start gap-[32px] h-min overflow-visible p-0 relative w-full
+}
+
+.additional-section-div-1 {
+  @apply flex flex-col items-start justify-start gap-1 h-min overflow-visible p-8 relative w-full bg-[#15132a] border border-[#282545] rounded-xl opacity-100 flex flex-col items-start justify-start gap-1 h-min overflow-visible p-8 relative w-full bg-[#15132a] border border-[#282545] rounded-xl opacity-100 flex flex-col items-start justify-start gap-1 h-min overflow-visible p-8 relative w-full bg-[#15132a] border border-[#282545] rounded-xl opacity-100 flex flex-col items-start justify-start gap-1 h-min overflow-visible p-8 relative w-full bg-[#15132a] border border-[#282545] rounded-xl opacity-100
+}
+.additional-section {
+  @apply grid gap-5 items-center justify-center overflow-hidden px-[160px] pb-[60px] relative w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4
+}
+
+.additional-section-div-3{
+  @apply font-size-h4 opacity-100 flex flex-col items-start justify-start gap-2 h-min overflow-visible p-0 relative w-full
+  font-size-h4 opacity-100 flex flex-col items-start justify-start gap-2 h-min overflow-visible p-0 relative w-full
+  font-size-h4 opacity-100 flex flex-col items-start justify-start gap-2 h-min overflow-visible p-0 relative w-full
+  font-size-h4 opacity-100 flex flex-col items-start justify-start gap-2 h-min overflow-visible p-0 relative w-full
+}
+
+.features button {
+  cursor: pointer;
+  padding: 16px 24px;
+  background-color: #2f2c85;
+  color: white;
+  border: 0;
+  border-radius: 23px;
+  position: relative;
+  z-index: 1;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  font-weight: bold;
+  overflow: hidden;
+}
+.features button::before{
+  content: "";
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, 0%);
+  background-color: #ededed;
+  border-radius: 23px;
+  z-index: -1;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+}
+.features button:hover{
+  color: black;
+}
+.features button:hover::before{
+  width: 105%;
+  height: 100%;
+}
+.features button:hover .arrow{
+  color: black;
+  margin-left: 5px;
+}
+.features .arrow {
+  color: white;
+  margin-left: 5px;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
 }

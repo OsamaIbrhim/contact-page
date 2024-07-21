@@ -5,6 +5,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import "@/app/lib/fontawesome";
+import MaskedButton from "@/components/button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} font-cabinet`}>{children}</body>
-    
+      <body className={`${inter.className} font-cabinet`}>
+        {children}
+      </body>
     </html>
-    
+
   );
 }
