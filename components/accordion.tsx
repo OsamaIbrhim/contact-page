@@ -30,41 +30,51 @@ export default function Accordion() {
 
   const handleClick = (index: number) => {
     setOpenIndexes(prevState =>
-      prevState.includes(index) 
+      prevState.includes(index)
         ? prevState.filter(i => i !== index)
         : [...prevState, index]
     );
   };
 
   return (
-    <div className="bg-[#151329] border border-[#282545] rounded-[20px]">
+    <div className="">
       {items.map((item, index) => (
-        <div key={item.id} className="bg-[#151329] p-4">
-          <h2>
-            <button
-              className="flex items-center justify-between w-full text-left font-semibold text-white py-2"
-              onClick={() => handleClick(index)}
-              aria-expanded={openIndexes.includes(index)}
-              aria-controls={`accordion-text-${item.id}`}
-            >
-              <svg className={`fill-indigo-500 shrink-0 mr-4 transition-transform duration-300 ${openIndexes.includes(index) ? 'rotate-45' : 'rotate-0'}`} width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1" y="7" width="14" height="2" rx="1" />
-                <rect x="7" y="1" width="2" height="14" rx="1" />
-              </svg>
-              <span className=''>{item.title}</span>
-            </button>
-          </h2>
-          <div
-            id={`accordion-text-${item.id}`}
-            role="region"
-            aria-labelledby={`accordion-title-${item.id}`}
-            className={`overflow-hidden transition-max-height duration-300 ease-in-out ${openIndexes.includes(index) ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}
-          >
-            <div className="overflow-hidden text-[#2A2A1B7]">
-              <p className="text-slate-400 text-sm mt-2">
-                {item.content}
-              </p>
+        <div key={item.id} className="">
+          <div className='flex flex-row'>
+            <div className='pl-[40px] pt-[20px] pb-[20px] w-full relative'>
+              <div className=''>
+                <h2 className='cursor-pointer'
+                onClick={() => handleClick(index)}
+                aria-expanded={openIndexes.includes(index)}
+                aria-controls={`accordion-text-${item.id}`}
+                >
+                  <button className="flex items-center justify-between text-left font-semibold text-white">
+                    <div className='opacity-30 left-0 absolute text-white'>
+                      <svg className={`fill-indigo-500 transition-transform duration-500 ${openIndexes.includes(index) ? 'rotate-45' : 'rotate-0'}`} width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <rect fill='white' x="1" y="7" width="15" height="2" rx="1" />
+                        <rect fill='white' x="7" y="1" width="2" height="15" rx="1" />
+                      </svg>
+                    </div>
+                    <span className='flex flex-start w-full'>{item.title}</span>
+                  </button>
+                </h2>
+                <div
+                  id={`accordion-text-${item.id}`}
+                  role="region"
+                  aria-labelledby={`accordion-title-${item.id}`}
+                  className={`overflow-hidden transition-max-height duration-500 ease-in-out ${openIndexes.includes(index) ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}
+                >
+                  <div className=" text-[#2A2A1B7]">
+                    <p className="text-slate-400 overflow-hidden w-[550px] text-[18px] mt-2">
+                      {item.content}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div>
+            {item.id !== 4 && <hr className='h-px border-0 dark:bg-gray-700' />}
           </div>
         </div>
       ))}

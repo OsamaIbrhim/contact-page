@@ -28,9 +28,6 @@
 
 .additional-section-div-3{
   @apply font-size-h4 opacity-100 flex flex-col items-start justify-start gap-2 h-min overflow-visible p-0 relative w-full
-  font-size-h4 opacity-100 flex flex-col items-start justify-start gap-2 h-min overflow-visible p-0 relative w-full
-  font-size-h4 opacity-100 flex flex-col items-start justify-start gap-2 h-min overflow-visible p-0 relative w-full
-  font-size-h4 opacity-100 flex flex-col items-start justify-start gap-2 h-min overflow-visible p-0 relative w-full
 }
 
 .features button {
@@ -75,7 +72,7 @@
   color: black;
 }
 .features button:hover::before{
-  width: 105%;
+  width: 150%;
   height: 100%;
 }
 .features button:hover .arrow{
@@ -90,4 +87,8 @@
   -moz-transition: .5s;
   -ms-transition: .5s;
   -o-transition: .5s;
+}
+
+.FQD2 {
+  grid-template-columns: repeat(auto-fill, minmax(640px, 1fr));
 }

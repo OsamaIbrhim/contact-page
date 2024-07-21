@@ -132,8 +132,8 @@ export default function ContactPage() {
           {/* End */}
 
           {/* Frequently Questions start */}
-          <div className="item-start flex flex-none  flex-row flex-nowrap gap-[4px] h-min content-center visible relative w-full px-[48px] py-[60px]">
-            <div className="item-start grow flex flex-row flex-nowrap h-min contant-between visible p-0 relative w-full bg-[#2a2a1b7]">
+          <div className="item-start flex flex-none  flex-row flex-nowrap gap-[4px] h-min content-center visible relative w-full px-[120px] py-[60px]">
+            <div className="item-start grow grid h-min contant-between visible p-0 relative w-full bg-[#2a2a1b7] FQD2">
 
               {/* Left Side */}
               <div className="flex flex-col grow flex-nowrap items-start gap-[16px] h-min content-start visible p-0 relative">
@@ -142,7 +142,7 @@ export default function ContactPage() {
                     Frequently asked questions
                   </p>
                 </div>
-                <h2 className="text-white text-3xl font-bold leading-tight">
+                <h2 className="text-white text-[48px] leading-tight">
                   Some of the things you may want to know
                 </h2>
                 <h6 className="text-[#a2a1b7] text-lg">
@@ -152,8 +152,14 @@ export default function ContactPage() {
               {/* end */}
 
               {/* Right Side */}
-              <div className="flex flex-col  h-auto relative">
-                <Accordion />
+              <div className="flex flex-col item-center  flex-nowrap gap-[60px] h-min content-center visible p-0">
+                <div className="contents">
+                  <div className="flex-none z-2 opacity-100">
+                    <div className="item-start flex flex-col flex-nowrap contant-start px-[20px] border border-solid border-[#281345] bg-[#151029] rounded-[20px] transform-none origin-center">
+                      <Accordion />
+                    </div>
+                  </div>
+                </div>
               </div>
               {/* end */}
 
